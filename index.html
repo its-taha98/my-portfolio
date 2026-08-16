@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>معرض الأعمال الشخصي | طه سلام</title>
+
+    <!-- FontAwesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="dark">
+    <!-- رابط تخطي للوصول السريع لفاقدي البصر باستخدام لوحة المفاتيح -->
+    <a href="#main-content" class="skip-link">الانتقال مباشرة إلى المحتوى الرئيسي</a>
+
+    <!-- منطقة لتنبيه برامج قراءة الشاشة بالتغييرات (القسم، اللغة، الوضع) -->
+    <div id="accessibility-announcer" class="sr-only" aria-live="polite"></div>
+
+    <div class="main-container">
+      <!-- القائمة الجانبية -->
+      <aside class="aside" aria-label="القائمة الرئيسية">
+        <div class="logo">
+          <a href="#" aria-label="الصفحة الرئيسية"><span>T</span>aha</a>
+        </div>
+        <nav class="nav">
+          <ul>
+            <li>
+              <a href="#home" class="active" data-section="home">
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <span class="lang-text" data-ar="الرئيسية" data-en="Home">الرئيسية</span>
+              </a>
+            </li>
+            <li>
+              <a href="#about" data-section="about">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <span class="lang-text" data-ar="من أنا" data-en="About">من أنا</span>
+              </a>
+            </li>
+            <li>
+              <a href="#skills" data-section="skills">
+                <i class="fa fa-code" aria-hidden="true"></i>
+                <span class="lang-text" data-ar="مهاراتي" data-en="Skills">مهاراتي</span>
+              </a>
+            </li>
+            <li>
+              <a href="#services" data-section="services">
+                <i class="fa fa-list" aria-hidden="true"></i>
+                <span class="lang-text" data-ar="مجالات التعلم" data-en="Services">مجالات التعلم</span>
+              </a>
+            </li>
+            <li>
+              <a href="#portfolio" data-section="portfolio">
+                <i class="fa fa-briefcase" aria-hidden="true"></i>
+                <span class="lang-text" data-ar="معرض الأعمال" data-en="Portfolio">معرض الأعمال</span>
+              </a>
+            </li>
+            <li>
+              <a href="#contact" data-section="contact">
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <span class="lang-text" data-ar="تواصل معي" data-en="Contact">تواصل معي</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- المحتوى الرئيسي -->
+      <main id="main-content" class="main-content">
+        <!-- قسم الرئيسية -->
+        <section class="home section active" id="home" aria-label="قسم الرئيسية">
+          <div class="container">
+            <div class="row">
+              <div class="home-info padd-15">
+                <h1 class="hello">
+                  <span class="lang-text" data-ar="مرحباً، أنا" data-en="Hello, I'm">أهلاً أنا</span> 
+                  <span class="name">طه سلام</span>
+                </h1>
+                <h2 class="profession">
+                  <span class="lang-text" data-ar="أنا" data-en="I'm a">أنا</span> 
+                  <span class="typing"></span>
+                </h2>
+                <p class="home-desc lang-text" 
+                   data-ar="مطور ويب مبتدئ بشغف كبير للتطور والتعلم المستمر. أعمل حالياً على بناء وتطوير صفحات ويب حديثة وبسيطة باستخدام أساسيات البرمجة، وأسعى دائماً لتحسين مهاراتي للوصول إلى أفضل نسخة مهنية تقديم أفكار جيدة."
+                   data-en="A junior web developer with a strong passion for continuous learning and growth. I am currently building clean and modern web pages using core programming concepts, always striving to improve my skills.">
+                   مطور ويب مبتدئ بشغف كبير للتطور والتعلم المستمر. أعمل حالياً على بناء وتطوير صفحات ويب حديثة وبسيطة باستخدام أساسيات البرمجة، وأسعى دائماً لتحسين مهاراتي للوصول إلى أفضل نسخة مهنية تقديم أفكار جيدة.
+                </p>
+                <!-- زر فتح النافذة المنبثقة لتحميل السيرة الذاتية -->
+                <button type="button" class="btn lang-text" id="cv-modal-btn" data-ar="📄 تحميل السيرة الذاتية" data-en="📄 Download CV">
+                  📄 تحميل السيرة الذاتية
+                </button>
+              </div>
+              <div class="home-img padd-15">
+                <img src="my-photo.jpeg" alt="الصورة الشخصية لـ طه سلام" id="user-avatar" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- قسم من أنا المطور -->
+        <section class="about section" id="about" aria-label="قسم من أنا">
+          <div class="container">
+            <div class="row">
+              <div class="section-title padd-15">
+                <h2 class="lang-text" data-ar="من أنا" data-en="About me">من أنا</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="about-content padd-15">
+                <!-- الفقرة التعريفية -->
+                <div class="about-text">
+                  <h3>
+                    <span class="lang-text" data-ar="أنا طه سلام، " data-en="I'm Taha Salam, ">أنا طه سلام، </span>
+                    <span class="skin-color lang-text" data-ar="مطور ويب شغوف بالتعلم المستمر" data-en="Junior Web Developer">مطور ويب شغوف بالتعلم المستمر</span>
+                  </h3>
+                  <p class="lang-text" 
+                     data-ar="مطور ويب في بداية مساري البرمجي، أمتلك شغفاً كبيراً ببناء واجهات مستخدم حديثة ومتجاوبة. أركز حالياً على إتقان الأساسيات مثل HTML5, CSS3, وJavaScript DOM Manipulation، وأعمل باستمرار على تطوير مهاراتي من خلال التطبيق العملي وبناء المشاريع الشخصية. أسعى دائماً لتحويل الأفكار إلى صفحات ويب سلسة وعصرية مع الالتزام بكتابة كود نظيف وسهل الصيانة."
+                     data-en="A junior web developer passionate about creating modern and responsive user interfaces. Currently focusing on mastering core fundamentals like HTML5, CSS3, and JavaScript DOM Manipulation. I continuously refine my skills through hands-on practice and personal portfolio projects, striving to build smooth, functional, and visually appealing web pages.">
+                     مطور ويب في بداية مساري البرمجي، أمتلك شغفاً كبيراً ببناء واجهات مستخدم حديثة ومتجاوبة. أركز حالياً على إتقان الأساسيات مثل HTML5, CSS3, وJavaScript DOM Manipulation، وأعمل باستمرار على تطوير مهاراتي من خلال التطبيق العملي وبناء المشاريع الشخصية. أسعى دائماً لتحويل الأفكار إلى صفحات ويب سلسة وعصرية مع الالتزام بكتابة كود نظيف وسهل الصيانة.
+                  </p>
+                </div>
+
+                <!-- شبكة البيانات الشخصية والمهنية -->
+                <div class="row about-details">
+                  <div class="info-item padd-15">
+                    <p><i class="fa fa-location-dot"></i> <strong class="lang-text" data-ar="الموقع:" data-en="Location:">الموقع:</strong> <span>بغداد، العراق</span></p>
+                  </div>
+                  <div class="info-item padd-15">
+                    <p><i class="fa fa-language"></i> <strong class="lang-text" data-ar="اللغات:" data-en="Languages:">اللغات:</strong> <span>العربية، التركية، الإنجليزية</span></p>
+                  </div>
+                  <div class="info-item padd-15">
+                    <p><i class="fa fa-bullseye"></i> <strong class="lang-text" data-ar="التركيز الحالي:" data-en="Current Focus:">التركيز الحالي:</strong> <span>Frontend Development (JS & React)</span></p>
+                  </div>
+                  <div class="info-item padd-15">
+                    <p><i class="fa fa-laptop-code"></i> <strong class="lang-text" data-ar="أسلوب العمل:" data-en="Work Style:">أسلوب العمل:</strong> <span>التطبيق العملي وكتابة كود نظيف</span></p>
+                  </div>
+                </div>
+
+                <!-- إحصائيات وبطاقات سريعة -->
+                <div class="row about-stats">
+                  <div class="stat-item padd-15">
+                    <div class="stat-inner shadow-dark">
+                      <h4>+100</h4>
+                      <p class="lang-text" data-ar="ساعة تطبيق عملي" data-en="Hours of Coding">ساعة تطبيق عملي</p>
+                    </div>
+                  </div>
+                  <div class="stat-item padd-15">
+                    <div class="stat-inner shadow-dark">
+                      <h4>100%</h4>
+                      <p class="lang-text" data-ar="التزام بالتطور المستمر" data-en="Commitment to Growth">التزام بالتطور المستمر</p>
+                    </div>
+                  </div>
+                  <div class="stat-item padd-15">
+                    <div class="stat-inner shadow-dark">
+                      <h4>Responsive</h4>
+                      <p class="lang-text" data-ar="تصاميم متجاوبة مع كافة الشاشات" data-en="Mobile-First Approach">تصاميم متجاوبة مع كافة الشاشات</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- قسم المهارات والتقنيات (الواقعي) -->
+        <section class="skills section" id="skills" aria-label="قسم المهارات">
+          <div class="container">
+            <div class="row">
+              <div class="section-title padd-15">
+                <h2 class="lang-text" data-ar="💻 المهارات والتقنيات (قيد التعلم)" data-en="💻 Skills & Technologies (Learning)">💻 المهارات والتقنيات (قيد التعلم)</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="service-item padd-15">
+                <div class="service-item-inner">
+                  <div class="icon"><i class="fab fa-html5" aria-hidden="true"></i></div>
+                  <h3>Basic Web Development</h3>
+                  <p class="lang-text" data-ar="أساسيات الهيكلة والتنسيق للمواقع باستخدام HTML5 & CSS3." data-en="Fundamentals of web structuring and styling with HTML5 & CSS3.">أساسيات الهيكلة والتنسيق للمواقع باستخدام HTML5 & CSS3.</p>
+                </div>
+              </div>
+              <div class="service-item padd-15">
+                <div class="service-item-inner">
+                  <div class="icon"><i class="fab fa-js" aria-hidden="true"></i></div>
+                  <h3>JavaScript Basics</h3>
+                  <p class="lang-text" data-ar="الأساسيات البرمجية والتفاعل مع عناصر الصفحة (DOM Manipulation)." data-en="Core programming logic and basic DOM manipulation.">الأساسيات البرمجية والتفاعل مع عناصر الصفحة (DOM Manipulation).</p>
+                </div>
+              </div>
+              <div class="service-item padd-15">
+                <div class="service-item-inner">
+                  <div class="icon"><i class="fas fa-tools" aria-hidden="true"></i></div>
+                  <h3>Tools & Workflow</h3>
+                  <p class="lang-text" data-ar="بيئة العمل VS Code وأساسيات إدارة الكود باستخدام Git & GitHub." data-en="VS Code environment and basic Git & GitHub workflow.">بيئة العمل VS Code وأساسيات إدارة الكود باستخدام Git & GitHub.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- قسم مجالات التعلم -->
+        <section class="service section" id="services" aria-label="قسم مجالات التعلم">
+          <div class="container">
+            <div class="row">
+              <div class="section-title padd-15">
+                <h2 class="lang-text" data-ar="مجالات التركيز والتعلم" data-en="Learning Focus">مجالات التركيز والتعلم</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="service-item padd-15">
+                <div class="service-item-inner">
+                  <div class="icon"><i class="fa fa-laptop-code" aria-hidden="true"></i></div>
+                  <h3 class="lang-text" data-ar="تطوير واجهات الويب" data-en="Frontend Fundamentals">تطوير واجهات الويب</h3>
+                  <p class="lang-text" data-ar="بناء صفحات ويب تجاوبية وبسيطة تناسب مختلف الشاشات والأجهزة." data-en="Building responsive, simple web pages that adapt to various screen sizes.">بناء صفحات ويب تجاوبية وبسيطة تناسب مختلف الشاشات والأجهزة.</p>
+                </div>
+              </div>
+              <div class="service-item padd-15">
+                <div class="service-item-inner">
+                  <div class="icon"><i class="fa fa-code" aria-hidden="true"></i></div>
+                  <h3 class="lang-text" data-ar="كتابة كود نظيف" data-en="Clean Code Practices">كتابة كود نظيف</h3>
+                  <p class="lang-text" data-ar="الاهتمام بتنظيم الأكواد وسهولة قراءتها وتطبيق أفضل الممارسات الأساسية." data-en="Focusing on code structure, readability, and basic best practices.">الاهتمام بتنظيم الأكواد وسهولة قراءتها وتطبيق أفضل الممارسات الأساسية.</p>
+                </div>
+              </div>
+              <div class="service-item padd-15">
+                <div class="service-item-inner">
+                  <div class="icon"><i class="fa fa-graduation-cap" aria-hidden="true"></i></div>
+                  <h3 class="lang-text" data-ar="التطوير المستمر" data-en="Continuous Growth">التطوير المستمر</h3>
+                  <p class="lang-text" data-ar="التطبيق العملي المستمر وبناء المشاريع لزيادة الخبرة والمهارة." data-en="Hands-on practice and building projects to continuously expand skills.">التطبيق العملي المستمر وبناء المشاريع لزيادة الخبرة والمهارة.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      <!-- قسم معرض الأعمال المطور -->
+        <section class="portfolio section" id="portfolio" aria-label="قسم معرض الأعمال">
+          <div class="container">
+            <div class="row">
+              <div class="section-title padd-15">
+                <h2 class="lang-text" data-ar="معرض الأعمال" data-en="Portfolio">معرض الأعمال</h2>
+              </div>
+            </div>
+            
+            <div class="row">
+              <!-- مشروع 1: موقع معرض الأعمال الشخصي -->
+              <div class="portfolio-item padd-15">
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img src="https://i.postimg.cc/NGkQB1Y0/portfolio-1.jpg" alt="معرض الأعمال الشخصي" />
+                  </div>
+                  <div class="portfolio-info">
+                    <h3 class="lang-text" data-ar="موقع معرض الأعمال الشخصي" data-en="Personal Portfolio Website">موقع معرض الأعمال الشخصي</h3>
+                    <p class="lang-text" 
+                       data-ar="موقع متجاوب يدعم اللغتين العربية والإنجليزية مع الوضع الليلي وقائمة منبثقة لتحميل السيرة الذاتية بدعم الوصول لبرامج قراءة الشاشة." 
+                       data-en="A responsive multi-language portfolio featuring dark mode, CV download popup, and web accessibility optimizations.">
+                       موقع متجاوب يدعم اللغتين العربية والإنجليزية مع الوضع الليلي وقائمة منبثقة لتحميل السيرة الذاتية بدعم الوصول لبرامج قراءة الشاشة.
+                    </p>
+                    <div class="portfolio-tags">
+                      <span>HTML5</span>
+                      <span>CSS3</span>
+                      <span>JavaScript</span>
+                      <span>Responsive</span>
+                    </div>
+                    <div class="portfolio-links">
+                      <!-- رابط المعاينة المباشر -->
+                      <a href="https://its-taha98.github.io/my-portfolio/" target="_blank" class="btn-sm">
+                        <i class="fa fa-external-link" aria-hidden="true"></i> 
+                        <span class="lang-text" data-ar="معاينة" data-en="Demo">معاينة</span>
+                      </a>
+                      <!-- رابط كود المشروع على GitHub -->
+                      <a href="https://github.com/its-taha98/my-portfolio" target="_blank" class="btn-sm btn-outline">
+                        <i class="fab fa-github" aria-hidden="true"></i> 
+                        <span class="lang-text" data-ar="الكود" data-en="Code">الكود</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- مشروع 2: تطبيق إدارة المهام التفاعلي -->
+              <div class="portfolio-item padd-15">
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img src="https://i.postimg.cc/ydg49Z3w/portfolio-2.jpg" alt="تطبيق إدارة المهام" />
+                  </div>
+                  <div class="portfolio-info">
+                    <h3 class="lang-text" data-ar="تطبيق إدارة المهام التفاعلي" data-en="Interactive To-Do App">تطبيق إدارة المهام التفاعلي</h3>
+                    <p class="lang-text" 
+                       data-ar="تطبيق تفاعلي لبناء وحفظ المهام اليومية باستخدام JavaScript DOM وحفظ البيانات محلية في المتصفح." 
+                       data-en="An interactive web application to build and manage daily tasks using JavaScript DOM manipulation and LocalStorage.">
+                       تطبيق تفاعلي لبناء وحفظ المهام اليومية باستخدام JavaScript DOM وحفظ البيانات محلية في المتصفح.
+                    </p>
+                    <div class="portfolio-tags">
+                      <span>JavaScript DOM</span>
+                      <span>LocalStorage</span>
+                      <span>CSS Grid</span>
+                    </div>
+                    <div class="portfolio-links">
+                      <a href="https://its-taha98.github.io/my-portfolio/" target="_blank" class="btn-sm">
+                        <i class="fa fa-external-link" aria-hidden="true"></i> 
+                        <span class="lang-text" data-ar="معاينة" data-en="Demo">معاينة</span>
+                      </a>
+                      <a href="https://github.com/its-taha98/my-portfolio" target="_blank" class="btn-sm btn-outline">
+                        <i class="fab fa-github" aria-hidden="true"></i> 
+                        <span class="lang-text" data-ar="الكود" data-en="Code">الكود</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- مشروع 3: واجهة صفحة هبوط تسويقية -->
+              <div class="portfolio-item padd-15">
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img src="https://i.postimg.cc/NGkQB1Y0/portfolio-1.jpg" alt="صفحة هبوط متجاوبة" />
+                  </div>
+                  <div class="portfolio-info">
+                    <h3 class="lang-text" data-ar="صفحة هبوط متجاوبة" data-en="Responsive Landing Page">صفحة هبوط متجاوبة</h3>
+                    <p class="lang-text" 
+                       data-ar="واجهة هبوط عصرية متجاوبة بالكامل مع مختلف أنواع الشاشات والأجهزة مع تركيز على تجربة المستخدم والتصفح السلس." 
+                       data-en="A modern, fully-responsive landing page UI designed with a focus on seamless user experience and accessibility.">
+                       واجهة هبوط عصرية متجاوبة بالكامل مع مختلف أنواع الشاشات والأجهزة مع تركيز على تجربة المستخدم والتصفح السلس.
+                    </p>
+                    <div class="portfolio-tags">
+                      <span>HTML5</span>
+                      <span>Flexbox</span>
+                      <span>CSS Animations</span>
+                    </div>
+                    <div class="portfolio-links">
+                      <a href="https://its-taha98.github.io/my-portfolio/" target="_blank" class="btn-sm">
+                        <i class="fa fa-external-link" aria-hidden="true"></i> 
+                        <span class="lang-text" data-ar="معاينة" data-en="Demo">معاينة</span>
+                      </a>
+                      <a href="https://github.com/its-taha98/my-portfolio" target="_blank" class="btn-sm btn-outline">
+                        <i class="fab fa-github" aria-hidden="true"></i> 
+                        <span class="lang-text" data-ar="الكود" data-en="Code">الكود</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <!-- قسم التواصل -->
+        <section class="contact section" id="contact" aria-label="قسم التواصل">
+          <div class="container">
+            <div class="row">
+              <div class="section-title padd-15">
+                <h2 class="lang-text" data-ar="تواصل معي" data-en="Contact">تواصل معي</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="contact-form padd-15">
+                <button type="button" class="btn lang-text" data-ar="إرسال رسالة" data-en="Send Message">إرسال رسالة</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!-- النافذة المنبثقة لاختيار لغة السيرة الذاتية -->
+    <div id="cv-modal" class="cv-modal" aria-hidden="true">
+      <div class="cv-modal-content">
+        <button class="cv-modal-close" id="cv-modal-close" aria-label="إغلاق">&times;</button>
+        <h3 class="lang-text" data-ar="اختر لغة السيرة الذاتية" data-en="Select CV Language">اختر لغة السيرة الذاتية</h3>
+        <div class="cv-options">
+          <a href="Taha-Salam-CV.AR.pdf" download class="btn cv-option-btn">
+            <i class="fa fa-file-pdf"></i>
+            <span class="lang-text" data-ar="العربية (AR)" data-en="Arabic (AR)">العربية (AR)</span>
+          </a>
+          <a href="Taha-Salam-CV.EN.pdf" download class="btn cv-option-btn">
+            <i class="fa fa-file-pdf"></i>
+            <span class="lang-text" data-ar="الإنجليزية (EN)" data-en="English (EN)">الإنجليزية (EN)</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- أدوات التحكم والوصول (الوضع الليلي واللغة) -->
+    <div class="controls-widget">
+      <!-- زر تغيير اللغة -->
+      <button class="control-btn lang-btn" id="lang-toggle" aria-label="تغيير اللغة إلى الإنجليزية">
+        <span>EN</span>
+      </button>
+
+      <!-- زر الوضع الليلي/النهاري -->
+      <button class="control-btn day-night" id="theme-toggle" aria-label="تبديل الوضع الليلي أو النهاري">
+        <i class="fas fa-sun" aria-hidden="true"></i>
+      </button>
+    </div>
+
+    <!-- المكتبات للأنيميشن والسكريبت التفاعلي -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>
+      let currentLang = 'ar';
+      const announcer = document.getElementById('accessibility-announcer');
+
+      // 1. تبديل اللغة (Language Toggle)
+      const langBtn = document.getElementById('lang-toggle');
+      langBtn.addEventListener('click', () => {
+        currentLang = currentLang === 'ar' ? 'en' : 'ar';
+        document.documentElement.lang = currentLang;
+        document.documentElement.dir = currentLang === 'ar' ? 'rtl' : 'ltr';
+
+        langBtn.querySelector('span').innerText = currentLang === 'ar' ? 'EN' : 'عربي';
+        langBtn.setAttribute('aria-label', currentLang === 'ar' ? 'تغيير اللغة إلى الإنجليزية' : 'Switch to Arabic language');
+
+        // تحديث جميع النصوص
+        document.querySelectorAll('.lang-text').forEach(el => {
+          if (el.dataset[currentLang]) {
+            el.innerText = el.dataset[currentLang];
+          }
+        });
+
+        // إعادة تشغيل انيميشن الكتابة للغة الحالية
+        initTypedAnimation();
+
+        // تنبيه برنامج قراءة الشاشة
+        announce(currentLang === 'ar' ? 'تم تغيير اللغة إلى العربية' : 'Language switched to English');
+      });
+
+      // 2. انيميشن الكتابة التفاعلي (Typed.js)
+      let typedInstance = null;
+      function initTypedAnimation() {
+        if (typedInstance) typedInstance.destroy();
+        const strings = currentLang === 'ar' 
+          ? ["مطور ويب مبتدئ", "HTML & CSS", "JavaScript Learner"] 
+          : ["Junior Web Developer", "HTML & CSS", "JavaScript Learner"];
+
+        typedInstance = new Typed(".typing", {
+          strings: strings,
+          typeSpeed: 90,
+          backSpeed: 50,
+          loop: true,
+        });
+      }
+      initTypedAnimation();
+
+      // 3. الوضع الليلي / النهاري (Dark/Light Mode)
+      const themeBtn = document.getElementById('theme-toggle');
+      themeBtn.addEventListener('click', () => {
+        document.body.classList.toggle('dark');
+        const isDark = document.body.classList.contains('dark');
+        themeBtn.querySelector('i').className = isDark ? 'fas fa-sun' : 'fas fa-moon';
+        announce(isDark ? 'تم تفعيل الوضع الليلي' : 'تم تفعيل الوضع النهاري');
+      });
+
+      // 4. التحكم في النافذة المنبثقة لاختيار لغة السيرة الذاتية (CV Modal)
+      const cvModalBtn = document.getElementById('cv-modal-btn');
+      const cvModal = document.getElementById('cv-modal');
+      const cvModalClose = document.getElementById('cv-modal-close');
+
+      cvModalBtn.addEventListener('click', () => {
+        cvModal.classList.add('show');
+        cvModal.setAttribute('aria-hidden', 'false');
+        announce(currentLang === 'ar' ? 'تم فتح قائمة اختيار لغة السيرة الذاتية' : 'CV language selection menu opened');
+      });
+
+      cvModalClose.addEventListener('click', () => {
+        cvModal.classList.remove('show');
+        cvModal.setAttribute('aria-hidden', 'true');
+      });
+
+      window.addEventListener('click', (e) => {
+        if (e.target === cvModal) {
+          cvModal.classList.remove('show');
+          cvModal.setAttribute('aria-hidden', 'true');
+        }
+      });
+
+      // 5. التنقل بين الأقسام وحل التداخل
+      const navLinks = document.querySelectorAll('.nav a');
+      const sections = document.querySelectorAll('.section');
+
+      navLinks.forEach(link => {
+        link.addEventListener('click', function (e) {
+          e.preventDefault();
+          navLinks.forEach(l => l.classList.remove('active'));
+          this.classList.add('active');
+
+          const targetId = this.getAttribute('href').replace('#', '');
+          sections.forEach(sec => {
+            sec.classList.remove('active');
+            if (sec.id === targetId) {
+              sec.classList.add('active');
+              sec.focus();
+            }
+          });
+
+          const secName = this.querySelector('.lang-text').innerText;
+          announce(`الانتقال إلى قسم ${secName}`);
+        });
+      });
+
+      // دالة التنبيه لفاقدي البصر
+      function announce(message) {
+        announcer.innerText = message;
+      }
+    </script>
+  </body>
+</html>
